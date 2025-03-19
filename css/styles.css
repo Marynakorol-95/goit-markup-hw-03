@@ -1,18 +1,56 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   color: #434455;
   background-color: #fff;
 }
+
+/* reset */
 
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style-type: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
 
-/*--------Header Container------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* common */
+
+.container {
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* header container */
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -24,6 +62,11 @@ ul {
   color: #4d5ae5;
 }
 
+.header-logo {
+  padding: 24px 0;
+  margin-right: 76px;
+}
+
 .header-logo .logo-text {
   color: #2e2f42;
 }
@@ -32,7 +75,15 @@ ul {
   color: #f4f4fd;
 }
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .nav-link {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -42,9 +93,18 @@ ul {
 
 .contacts {
   font-style: normal;
+  margin-left: auto;
+}
+
+.contacts-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .contacts-link {
+  display: block;
+  padding: 24px 0;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -57,7 +117,7 @@ ul {
   color: #404bbf;
 }
 
-/*-------Main Container--------*/
+/* title */
 
 .box {
   background-color: #2e2f42;
@@ -87,7 +147,7 @@ ul {
   background-color: #404bbf;
 }
 
-/*---Features---*/
+/* features */
 
 .features-subtitle {
   font-weight: 500;
@@ -104,7 +164,7 @@ ul {
   color: #434455;
 }
 
-/*-Information about team-*/
+/* information about team-*/
 
 .box-team {
   background-color: #f4f4fd;
@@ -140,7 +200,7 @@ ul {
   color: #434455;
 }
 
-/*---Portfolio---*/
+/* portfolio */
 
 .portfolio-title {
   font-weight: 700;
@@ -166,7 +226,7 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
-/*------Footer Container------*/
+/* footer container */
 .page-footer {
   background-color: #2e2f42;
 }
